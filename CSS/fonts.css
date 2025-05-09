@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'custom__font'; /* Give the font a name */
+    src: url('/Assets/Fonts/Markazi_Text/MarkaziText-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal; /* Optional: normal, bold, etc. */
+    font-style: normal; /* Optional: normal, italic, etc. */
+}
+
+
+  
+body, h1, h2, h3, p, ul, li, a, span {
+    font-family: 'custom__font',  sans-serif; /* Fallback to a default font */ 
+}
+
+html {
+    font-size: 20px;
+}

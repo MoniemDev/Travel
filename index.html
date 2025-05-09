@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>وكالة واندرلست للسفر</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/fonts.css">
 </head>
 <body>
     <header id="home">
-        <div class="container">
-            <nav>
+        <div class="navbar">
+
+            <div class="container">
+                <div class="logo">
+                    <img src="/Assets/Images/logo/ab-white.svg" alt="وكالة واندرلست للسفر">
+                </div>
                 <input type="checkbox" id="nav-toggle" class="nav-toggle">
                 <label for="nav-toggle" class="nav-toggle-label">
                     <span></span>
                 </label>
-                <ul>
-                    <li><a href="#home">الرئيسية</a></li>
-                    <li><a href="#about">من نحن</a></li>
-                    <li><a href="#packages">الباقات</a></li>
-                    <li><a href="#gallery">معرض الصور</a></li>
-                    <li><a href="#testimonials">آراء العملاء</a></li>
-                    <li><a href="#contact">اتصل بنا</a></li>
-                </ul>
-            </nav>
-            <div class="logo">
-                <img src="/Assets/Images/logo/ab-white.svg" alt="وكالة واندرلست للسفر">
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="active">الرئيسية</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#packages">الباقات</a></li>
+                        <li><a href="#gallery">معرض الصور</a></li>
+                        <li><a href="#testimonials">آراء العملاء</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <div class="hero">
@@ -211,47 +215,106 @@
     </section>
 
     <section id="contact" class="contact">
+        <div class="contact-bg-pattern"></div>
         <div class="container">
-            <h2>اتصل بنا</h2>
+            <div class="section-header">
+                <h2>اتصل بنا</h2>
+                <p class="section-subtitle">نحن هنا للإجابة على جميع استفساراتك</p>
+            </div>
+
             <div class="contact-wrapper">
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">الاسم</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">البريد الإلكتروني</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">الرسالة</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">إرسال الرسالة</button>
-                    </form>
-                </div>
                 <div class="contact-info">
-                    <h3>تواصل معنا</h3>
-                    <p>هل لديك أسئلة حول باقات السفر أو خدماتنا؟ تواصل معنا مباشرة أو املأ النموذج.</p>
-                    <div class="contact-details">
-                        <div>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>123 طريق السفر، مدينة المغامرة، AC 12345</p>
+                    <div class="contact-card">
+                        <h3>تواصل معنا</h3>
+                        <p>هل لديك أسئلة حول باقات السفر أو خدماتنا؟ تواصل معنا مباشرة أو املأ النموذج.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>العنوان</h4>
+                                    <p>123 طريق السفر، مدينة المغامرة، AC 12345</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>الهاتف</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>البريد الإلكتروني</h4>
+                                    <p>info@wanderlusttravel.com</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <i class="fas fa-phone"></i>
-                            <p>+1 (555) 123-4567</p>
+
+                        <div class="social-contact">
+                            <h4>تابعنا على</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                            </div>
                         </div>
-                        <div>
-                            <i class="fas fa-envelope"></i>
-                            <p>info@wanderlusttravel.com</p>
+
+                        <div class="whatsapp-button">
+                            <a href="https://wa.me/15551234567" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> دردشة على واتساب
+                            </a>
                         </div>
                     </div>
-                    <div class="whatsapp-button">
-                        <a href="https://wa.me/15551234567" class="btn btn-whatsapp">
-                            <i class="fab fa-whatsapp"></i> دردشة على واتساب
-                        </a>
+                </div>
+
+                <div class="contact-form-container">
+                    <div class="contact-form-card">
+                        <h3>أرسل لنا رسالة</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <div class="input-container">
+                                    <i class="fas fa-user input-icon"></i>
+                                    <input type="text" id="name" name="name" placeholder="الاسم الكامل" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-container">
+                                    <i class="fas fa-envelope input-icon"></i>
+                                    <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-container">
+                                    <i class="fas fa-phone input-icon"></i>
+                                    <input type="tel" id="phone" name="phone" placeholder="رقم الهاتف">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-container">
+                                    <i class="fas fa-comment input-icon textarea-icon"></i>
+                                    <textarea id="message" name="message" placeholder="رسالتك" required></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit">
+                                <span>إرسال الرسالة</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
