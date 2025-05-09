@@ -736,6 +736,19 @@ footer {
     font-size: 0.9rem;
 }
 
+.copyright a {
+    color: #000;
+    padding: 6px 12px;
+    margin: 10px;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+.copyright a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
 /* Mobile Navigation */
 .nav-toggle {
     display: none;
